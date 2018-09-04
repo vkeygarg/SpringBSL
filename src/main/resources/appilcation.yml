@@ -1,0 +1,17 @@
+
+spring:
+ thymeleaf:
+   cache: false
+ security:
+   oauth2:
+     client:
+       registration:
+         okta:
+           client-id: {clientId}
+           client-secret: {clientSecret}
+       provider:
+         okta:
+           authorization-uri: https://broadcom.oktapreview.com/oauth2/default/v1/authorize
+           token-uri: https://broadcom.oktapreview.com/oauth2/default/v1/token
+           user-info-uri: https://broadcom.oktapreview.com/oauth2/default/v1/userinfo
+           jwk-set-uri: https://broadcom.oktapreview.com/oauth2/default/v1/keys
